@@ -1,0 +1,30 @@
+{
+  "name": "genpark-fintech-webhook-idempotent-replay-guard-skill",
+  "version": "1.0.0",
+  "description": "Cryptographic payment webhook ingestion guard enforcing HMAC-SHA256 signatures, sliding replay tolerance, and atomic idempotency locking.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "fintech",
+    "webhooks",
+    "idempotency",
+    "hmac",
+    "payment-security",
+    "zero-dependency",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "verify_hmac_signature",
+      "description": "Verify cryptographic HMAC-SHA256 signature with sliding timestamp tolerance."
+    },
+    {
+      "name": "process_idempotent_webhook",
+      "description": "Acquire idempotency lock and process webhook without duplicate debiting."
+    },
+    {
+      "name": "run_benchmark_webhook_guard",
+      "description": "Run webhook security and idempotency benchmark suite."
+    }
+  ]
+}
