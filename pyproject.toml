@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genpark-fintech-webhook-idempotent-replay-guard-skill"
+version = "1.0.0"
+description = "Cryptographic payment webhook ingestion guard enforcing HMAC-SHA256 signatures, sliding replay tolerance, and atomic idempotency locking."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "GenPark AI", email = "engineering@genpark.ai"}]
+keywords = ["ai-agent", "mcp", "fintech", "zero-dependency"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://genpark.ai/mcp"
+Repository = "https://github.com/alphaparkinc/genpark-fintech-webhook-idempotent-replay-guard-skill"
